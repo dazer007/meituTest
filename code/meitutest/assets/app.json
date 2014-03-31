@@ -1,0 +1,67 @@
+{
+    "type1": [
+    {
+        "RequestURL": "http://ceshi.meitu.com/2/mkimg.php",
+        "FormData": "username",
+        "ResultType": "imgUrl",
+        "AppName": "卡通身份证",
+        "describe": "的卡通造型好梦呀"
+    },
+    {
+        "RequestURL": "http://ceshi.meitu.com/4/mkimg.php",
+        "FormData": "username",
+        "ResultType": "imgUrl",
+        "AppName": "大脑分析",
+        "describe": "的满脑子都想的是这"
+    },
+    {
+        "RequestURL": "http://ceshi.meitu.com/5/mkimg.php",
+        "FormData": "username",
+        "ResultType": "json",
+        "AppName": "兔子城市",
+        "describe": "在兔子世界了他竟然是这样的"
+    },
+    {
+        "RequestURL": "http://ceshi.meitu.com/7/mkimg.php",
+        "FormData": "username",
+        "ResultType": "json",
+        "AppName": "艳遇指数",
+        "describe": "的艳遇"
+    },
+    {
+        "RequestURL": "http://ceshi.meitu.com/8/mkimg.php",
+        "FormData": "username",
+        "ResultType": "json",
+        "AppName": "超能力",
+        "describe": "的超能力，风一般的男人"
+    },
+    {
+        "RequestURL": "http://ceshi.meitu.com/9/mkimg.php",
+        "FormData": "username",
+        "ResultType": "json",
+        "AppName": "颁奖典礼",
+        "describe": "在颁奖典礼上是这样的"
+    },
+    {
+        "RequestURL": "http://ceshi.meitu.com/11/mkimg.php",
+        "FormData": "username",
+        "ResultType": "json",
+        "AppName": "演员证",
+        "describe": "的演员形象不差才"
+    },
+    {
+        "RequestURL": "http://ceshi.meitu.com/15/mkimg.php",
+        "FormData": "username",
+        "ResultType": "json",
+        "AppName": "童真测试",
+        "describe": "的儿童记忆的写照"
+    },
+    {
+        "RequestURL": "http://ceshi.meitu.com/16/mkimg.php",
+        "FormData": "username",
+        "ResultType": "json",
+        "AppName": "梦境预测",
+        "describe": "的梦境"
+    }
+]
+}

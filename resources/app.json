@@ -1,0 +1,58 @@
+{
+    "apps": [
+        {
+            "RequestURL": "http://ceshi.meitu.com/2/mkimg.php", 
+            "FormData": "username",
+            "ResultType": "imgUrl",
+            "AppName": "卡通身份证"
+        }, 
+        {
+           "RequestURL": "http://ceshi.meitu.com/4/mkimg.php", 
+            "FormData": "username",
+            "ResultType": "imgUrl",
+            "AppName": "大脑分析"
+        }, 
+        {
+            "RequestURL": "http://ceshi.meitu.com/5/mkimg.php", 
+            "FormData": "username",
+            "ResultType": "json",
+            "AppName": "兔子测试"
+        }, 
+        {
+            "RequestURL": "http://ceshi.meitu.com/7/mkimg.php", 
+            "FormData": "username",
+            "ResultType": "json",
+            "AppName": "艳遇指数"
+        }, 
+        {
+            "RequestURL": "http://ceshi.meitu.com/8/mkimg.php", 
+            "FormData": "username",
+            "ResultType": "json",
+            "AppName": "超能力"
+        }, 
+        {
+            "RequestURL": "http://ceshi.meitu.com/9/mkimg.php", 
+            "FormData": "username",
+            "ResultType": "json",
+            "AppName": "颁奖典礼"
+        }, 
+        {
+            "RequestURL": "http://ceshi.meitu.com/11/mkimg.php", 
+            "FormData": "username",
+            "ResultType": "json",
+            "AppName": "演员证"
+        }, 
+        {
+            "RequestURL": "http://ceshi.meitu.com/15/mkimg.php", 
+            "FormData": "username",
+            "ResultType": "json",
+            "AppName": "童真测试"
+        }, 
+        {
+            "RequestURL": "http://ceshi.meitu.com/16/mkimg.php", 
+            "FormData": "username",
+            "ResultType": "json",
+            "AppName": "梦境预测"
+        }
+    ]
+}

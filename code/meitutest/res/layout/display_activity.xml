@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+    <!--操作按钮布局-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/navibar_bg">
+        <Button
+                android:id="@+id/share"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_viewer_selector"
+                android:text="分享"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:onClick="shareButtonOnClick"/>
+        <Button
+                android:id="@+id/delete"
+                android:layout_toLeftOf="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_viewer_selector"
+                android:text="保存"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:onClick="saveButtonOnClick"/>
+
+    </RelativeLayout>
+
+    <!--中间图片布局-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <!--fitCenter -->
+        <!--CENTER_CROP-->
+        <ImageView
+                android:id="@+id/image"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+    </LinearLayout>
+
+
+
+    <!--广告布局-->
+    <LinearLayout
+            android:id="@+id/adLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <!--view组件非ViewGroup组件动画设置-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--定义渐变动画,从不透明到半透明，持续时间3s-->
+    <alpha
+    android:fromAlpha="1.0"
+    android:toAlpha="0.3"
+    android:duration="3000" />
+    <!--定义缩放动画效果,以图形中心，x,y都从有道2倍大小，每间隔0.1s执行一次，每次持续3s-->
+    <scale
+    android:fromXScale="1.0"
+    android:toXScale="2.0"
+    android:fromYScale="1.0"
+    android:toYScale="2.0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:startOffset="100"
+    android:repeatCount="1"
+    android:duration="3000"/>
+    <!--旋转动画效果,以中心点为轴旋转360度-->
+    <rotate
+    android:fromDegrees="0.0"
+    android:toDegrees="+360.0"
+    android:pivotX="50%p"
+    android:pivotY="50%p"
+    android:duration="3000"/>
+</set>

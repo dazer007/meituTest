@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.dazhi.meitutest"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10"/>
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/icon"
+                 android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name=".activity.MainActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ShowImgActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.FullScreen_acitity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <!--必须设置两个子标签的值-->
+                <action android:name="com.dazhi.Landscape"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+    </application>
+
+    <!--访问网络-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--访问网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--读写SDCARD的权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--增加横竖屏改变触发事件的权限-->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+
+
+    <!-- 有米传媒 Android SDK 所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 可选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
+    <!-- /有米传媒 Android SDK 所需权限 -->
+
+    <!-- 有米传媒 Android SDK 配置(可直接复制节点) -->
+    <!-- SDK 必须配置 -->
+    <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar">
+    </activity>
+    <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false">
+    </service>
+    <receiver
+            android:name="net.youmi.android.AdReceiver"
+            android:exported="false">
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_ADDED"/>
+
+            <data android:scheme="package"/>
+        </intent-filter>
+    </receiver>
+    <!-- /SDK 必须配置 -->
+
+</manifest>
